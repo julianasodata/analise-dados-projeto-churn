@@ -1,47 +1,60 @@
 # Análise de Dados: Identificação de Churn 📉
 
-Este projeto realiza uma Análise Exploratória de Dados (EDA) detalhada para entender os padrões de cancelamento de clientes (Churn). O foco principal é a **higienização e preparação dos dados**, garantindo que as informações estejam prontas para modelos de Machine Learning ou dashboards estratégicos.
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
+
+Este projeto realiza uma **Análise Exploratória de Dados (EDA)** detalhada para identificar padrões de cancelamento de clientes (Churn). O diferencial desta abordagem é o foco na **higienização automatizada**, garantindo que a base de dados esteja livre de ruídos antes de qualquer modelagem preditiva.
 
 ## 🎯 Objetivo do Projeto
 
-Identificar comportamentos de clientes e tratar inconsistências no dataset que poderiam enviesar uma análise de retenção. O projeto foca em transformar dados brutos em informações confiáveis através de técnicas avançadas de limpeza.
-
-## 🛠️ Tecnologias e Ferramentas
-
-* **Linguagem:** Python 3.x
-* **Bibliotecas:** * `Pandas`: Manipulação e tratamento de dataframes.
-    * `Numpy`: Operações matemáticas e tratamento de arrays.
-    * `IPython`: Renderização de elementos visuais no notebook.
+Transformar dados brutos em informações confiáveis. O projeto ataca diretamente o problema de inconsistência de dados (como valores não-numéricos em campos de faturamento) que frequentemente enviesam análises de retenção em empresas de tecnologia e serviços.
 
 ## 🚀 Destaques Técnicos
 
-O diferencial deste projeto é a implementação de funções automatizadas para validação de dados, como a função `invalidos(df)`, que:
-1.  **Diferencia tipos de dados:** Separa automaticamente colunas de texto (categorias) de colunas numéricas.
-2.  **Identificação de Ruído:** Utiliza coerção de tipos (`pd.to_numeric` com `errors='coerce'`) para encontrar caracteres inválidos ou strings em colunas que deveriam ser puramente numéricas.
-3.  **Métricas de Qualidade:** Gera um relatório de volume de erros por coluna, essencial para a fase de *Data Cleaning*.
+O projeto implementa uma lógica de **Data Quality** através da função customizada `invalidos(df)`, que executa:
+
+* **Tipagem Dinâmica:** Identifica e separa automaticamente o tratamento de colunas categóricas e numéricas.
+* **Detecção de Ruído com Coerção:** Utiliza `pd.to_numeric(errors='coerce')` para localizar strings camufladas em colunas de valor, algo comum em exportações de sistemas ERP.
+* **Relatório de Inconsistências:** Resume o volume de erros por coluna, permitindo uma decisão rápida sobre o descarte ou tratamento de registros.
 
 ## 📁 Estrutura do Repositório
 
-* `Projeto_Ciencia_Dados.ipynb`: Notebook principal com a análise.
-* `Imagem_Projeto_Ciencia_Dados_2.jpg`: Assets visuais utilizados na apresentação do projeto.
-* `dataset_exemplo.csv` *(se disponível)*: Base de dados utilizada.
+| Arquivo | Descrição |
+| :--- | :--- |
+| `Projeto_Ciencia_Dados.ipynb` | Notebook principal com a lógica de análise e limpeza. |
+| `Imagem_Projeto_Ciencia_Dados_2.jpg` | Asset visual integrado ao relatório via IPython Display. |
+
+## 🛠️ Tecnologias e Ferramentas
+
+* **Pandas & Numpy**: Processamento, limpeza e manipulação matricial de dados.
+* **IPython.display**: Utilizado para renderizar interfaces e elementos visuais diretamente no notebook.
 
 ## ⚙️ Como Executar
 
-1. Clone o repositório:
-    git clone [https://github.com/julianasodata/analise-dados-projeto-churn.git](https://github.com/julianasodata/analise-dados-projeto-churn.git)
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/julianasodata/analise-dados-projeto-churn.git](https://github.com/julianasodata/analise-dados-projeto-churn.git)
+   ```
+   
+2. **Instale as dependências:**
+   ````bash
+   pip install pandas numpy
+   ````
+3. **Inicie o ambiente:**
+Abra o arquivo .ipynb utilizando o Jupyter Notebook, VS Code ou importe para o Google Colab.
 
-2. Instale as dependências necessárias:
-    pip install pandas numpy
-    
-Execute o Jupyter Notebook ou abra no Google Colab.
+🔮 Próximos Passos
+[ ] Implementação de visualizações gráficas de distribuição com Seaborn.
 
-*Desenvolvido por Juliana Santos*
+[ ] Aplicação de modelos de Machine Learning (Random Forest ou XGBoost) para predição.
 
----
+[ ] Tratamento estatístico de outliers identificados durante a EDA.
 
-### Dicas Finais para o seu Portfólio:
+Desenvolvido por *Juliana Santos*
 
-1.  **Imagens:** Como seu código tenta carregar uma imagem (`Imagem_Projeto_Ciencia_Dados_2.jpg`), certifique-se de que essa imagem está na **raiz do repositório**. Se ela for apenas decorativa para o notebook, você também pode adicioná-la diretamente no README para dar um visual mais moderno.
-2.  **Organização:** No GitHub, vá em **Settings** e certifique-se de que o repositório está **Public**.
-3.  **Próximos Passos:** Se você pretende evoluir este projeto, adicione uma seção chamada `## Próximos Passos` citando que pretende aplicar modelos de classificação (como Random Forest ou Regressão Logística) para prever o Churn. Isso mostra que você tem visão de futuro para o projeto.
+"Transformando dados em decisões estratégicas."
+
+**LinkedIn:** 
+
+   
