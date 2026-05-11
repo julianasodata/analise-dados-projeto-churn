@@ -29,54 +29,9 @@ O diferencial deste projeto é a implementação de funções automatizadas para
 ## ⚙️ Como Executar
 
 1. Clone o repositório:
-   ```bash
-   git clone [https://github.com/julianasodata/analise-dados-projeto-churn.git](https://github.com/julianasodata/analise-dados-projeto-churn.git)
-
-   Para deixar seu README no GitHub com um nível profissional, o foco deve ser em explicar o valor do seu projeto (por que ele existe) e a sua competência técnica (como você resolveu o problema).
-
-Aqui está a estrutura completa e otimizada para o seu projeto de Análise de Churn, baseada nas funções de tratamento de dados que você desenvolveu no seu notebook:
-
-Configuração do "About" (Descrição Lateral)
-No campo About do GitHub, cole isto:
-
-📊 Análise exploratória e tratamento de dados para predição de Churn. Inclui automação de limpeza de dados e identificação de inconsistências em variáveis numéricas e categóricas.
-
-Conteúdo para o README.md
-Markdown
-# Análise de Dados: Identificação de Churn 📉
-
-Este projeto realiza uma Análise Exploratória de Dados (EDA) detalhada para entender os padrões de cancelamento de clientes (Churn). O foco principal é a **higienização e preparação dos dados**, garantindo que as informações estejam prontas para modelos de Machine Learning ou dashboards estratégicos.
-
-## 🎯 Objetivo do Projeto
-
-Identificar comportamentos de clientes e tratar inconsistências no dataset que poderiam enviesar uma análise de retenção. O projeto foca em transformar dados brutos em informações confiáveis através de técnicas avançadas de limpeza.
-
-## 🛠️ Tecnologias e Ferramentas
-
-* **Linguagem:** Python 3.x
-* **Bibliotecas:** * `Pandas`: Manipulação e tratamento de dataframes.
-    * `Numpy`: Operações matemáticas e tratamento de arrays.
-    * `IPython`: Renderização de elementos visuais no notebook.
-
-## 🚀 Destaques Técnicos
-
-O diferencial deste projeto é a implementação de funções automatizadas para validação de dados, como a função `invalidos(df)`, que:
-1.  **Diferencia tipos de dados:** Separa automaticamente colunas de texto (categorias) de colunas numéricas.
-2.  **Identificação de Ruído:** Utiliza coerção de tipos (`pd.to_numeric` com `errors='coerce'`) para encontrar caracteres inválidos ou strings em colunas que deveriam ser puramente numéricas.
-3.  **Métricas de Qualidade:** Gera um relatório de volume de erros por coluna, essencial para a fase de *Data Cleaning*.
-
-## 📁 Estrutura do Repositório
-
-* `Projeto_Ciencia_Dados.ipynb`: Notebook principal com a análise.
-* `Imagem_Projeto_Ciencia_Dados_2.jpg`: Assets visuais utilizados na apresentação do projeto.
-* `dataset_exemplo.csv` *(se disponível)*: Base de dados utilizada.
-
-## ⚙️ Como Executar
-
-1. Clone o repositório:
     git clone [https://github.com/julianasodata/analise-dados-projeto-churn.git](https://github.com/julianasodata/analise-dados-projeto-churn.git)
 
-2.0Instale as dependências necessárias:
+2. Instale as dependências necessárias:
     pip install pandas numpy
     
 Execute o Jupyter Notebook ou abra no Google Colab.
