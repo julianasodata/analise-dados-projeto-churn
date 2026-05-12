@@ -42,19 +42,16 @@ O projeto implementa uma lógica de **Data Quality** através da função custom
    pip install pandas numpy
    ````
 3. **Inicie o ambiente:**
-Abra o arquivo .ipynb utilizando o Jupyter Notebook, VS Code ou importe para o Google Colab.
+   Abra o arquivo .ipynb utilizando o Jupyter Notebook, VS Code ou importe para o Google Colab.
 
-🔮 Próximos Passos
-[ ] Implementação de visualizações gráficas de distribuição com Seaborn.
+## 🔮 Próximos Passos
 
-[ ] Aplicação de modelos de Machine Learning (Random Forest ou XGBoost) para predição.
+* [ ] Implementação de visualizações gráficas de distribuição com `Seaborn`.
+* [ ] Aplicação de modelos de Machine Learning (Random Forest ou XGBoost) para predição.
+* [ ] Tratamento estatístico de *outliers* identificados durante a EDA.
 
-[ ] Tratamento estatístico de outliers identificados durante a EDA.
+---
+**Desenvolvido por [Juliana Santos](https://www.linkedin.com/in/julianasodata)**
 
-Desenvolvido por *Juliana Santos*
-
-"Transformando dados em decisões estratégicas."
-
-**LinkedIn:** 
-
+> "Transformando dados em decisões estratégicas."
    
