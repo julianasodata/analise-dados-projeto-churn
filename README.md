@@ -46,9 +46,9 @@ O projeto implementa uma lógica de **Data Quality** através da função custom
 
 ## 🔮 Próximos Passos
 
-* **Implementação de visualizações gráficas de distribuição com `Seaborn`.
-* **Aplicação de modelos de Machine Learning (Random Forest ou XGBoost) para predição.
-* **Tratamento estatístico de *outliers* identificados durante a EDA.
+* Implementação de visualizações gráficas de distribuição com `Seaborn`.
+* Aplicação de modelos de Machine Learning (Random Forest ou XGBoost) para predição.
+* Tratamento estatístico de *outliers* identificados durante a EDA.
 
 ---
 **Desenvolvido por [Juliana Santos](https://www.linkedin.com/in/julianasodata)**
